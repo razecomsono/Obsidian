@@ -1186,7 +1186,6 @@ local function ParentUI(UI: Instance, SkipHiddenUI: boolean?)
 end
 
 local ScreenGui = New("ScreenGui", {
-    Name = "Obsidian",
     DisplayOrder = 998,
     ResetOnSpawn = false,
 })
@@ -8684,7 +8683,6 @@ function Library:CreateLoading(LoadingInfo)
 
     --// ScreenGui \\--
     local ScreenGui = New("ScreenGui", {
-        Name = "ObsidianLoading",
         DisplayOrder = 999,
         ResetOnSpawn = false
     })
