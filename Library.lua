@@ -2360,6 +2360,7 @@ do
             end
 
             function KeybindsToggle:SetVisibility(Visibility)
+                KeybindsToggle.ForceHidden = not Visibility
                 Holder.Visible = Visibility
             end
 
