@@ -2480,7 +2480,9 @@ do
                 end
 
                 KeybindsToggle:SetText(("[%s] %s (%s)"):format(KeyPicker.DisplayValue, KeyPicker.Text, KeyPicker.Mode))
-                KeybindsToggle:SetVisibility(true)
+                if not KeybindsToggle.ForceHidden then
+                    KeybindsToggle:SetVisibility(true)
+                end
                 KeybindsToggle:Display(State)
             end
         end
