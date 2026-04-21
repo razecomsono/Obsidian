@@ -2385,6 +2385,7 @@ do
             KeybindsToggle.Label = Label
             KeybindsToggle.Checkbox = Checkbox
             KeybindsToggle.Loaded = true
+            KeyPicker.KeybindsToggle = KeybindsToggle
             table.insert(Library.KeybindToggles, KeybindsToggle)
         end
 
