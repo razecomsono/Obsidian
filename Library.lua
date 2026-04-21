@@ -2385,7 +2385,6 @@ do
             KeybindsToggle.Label = Label
             KeybindsToggle.Checkbox = Checkbox
             KeybindsToggle.Loaded = true
-            KeyPicker.KeybindsToggle = KeybindsToggle
             table.insert(Library.KeybindToggles, KeybindsToggle)
         end
 
@@ -2481,7 +2480,9 @@ do
                 end
 
                 KeybindsToggle:SetText(("[%s] %s (%s)"):format(KeyPicker.DisplayValue, KeyPicker.Text, KeyPicker.Mode))
-                KeybindsToggle:SetVisibility(true)
+                if not KeybindsToggle.ForceHidden then
+                    KeybindsToggle:SetVisibility(true)
+                end
                 KeybindsToggle:Display(State)
             end
         end
