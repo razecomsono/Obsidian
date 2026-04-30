@@ -47,78 +47,286 @@ do
     ThemeManager.Library = nil
     ThemeManager.AppliedToTab = false
     ThemeManager.BuiltInThemes = {
-        ["Default"] = {
+        ["Default Obsidian"] = {
             1,
-            { FontColor = "ffffff", MainColor = "191919", AccentColor = "7d55ff", BackgroundColor = "0f0f0f", OutlineColor = "282828" },
+            { FontColor = "ffffff", MainColor = "191919", AccentColor = "7d55ff", BackgroundColor = "0f0f0f", OutlineColor = "282828", FontFace = "Code" },
+        },
+        ["Old Revenant."] = {
+            2,
+            { FontColor = "ffffff", MainColor = "191919", AccentColor = "a2a2a2", BackgroundColor = "000000", OutlineColor = "282828", FontFace = "Gotham" },
+        },
+        ["Aurora"] = {
+            3,
+            { FontColor = "e0f7fa", MainColor = "2b303b", AccentColor = "81a1c1", BackgroundColor = "1c222b", OutlineColor = "3e4755", FontFace = "Gotham" },
         },
         ["BBot"] = {
-            2,
-            { FontColor = "ffffff", MainColor = "1e1e1e", AccentColor = "7e48a3", BackgroundColor = "232323", OutlineColor = "141414" },
-        },
-        ["Fatality"] = {
-            3,
-            { FontColor = "ffffff", MainColor = "1e1842", AccentColor = "c50754", BackgroundColor = "191335", OutlineColor = "3c355d" },
-        },
-        ["Jester"] = {
             4,
-            { FontColor = "ffffff", MainColor = "242424", AccentColor = "db4467", BackgroundColor = "1c1c1c", OutlineColor = "373737" },
+            { FontColor = "ffffff", MainColor = "1e1e1e", AccentColor = "7e48a3", BackgroundColor = "232323", OutlineColor = "141414", FontFace = "Gotham" },
         },
-        ["Mint"] = {
+        ["Berry Smoothie"] = {
             5,
-            { FontColor = "ffffff", MainColor = "242424", AccentColor = "3db488", BackgroundColor = "1c1c1c", OutlineColor = "373737" },
+            { FontColor = "ffffff", MainColor = "722f37", AccentColor = "d36ba6", BackgroundColor = "40102b", OutlineColor = "703060", FontFace = "Gotham" },
         },
-        ["Tokyo Night"] = {
+        ["Buttercup"] = {
             6,
-            { FontColor = "ffffff", MainColor = "191925", AccentColor = "6759b3", BackgroundColor = "16161f", OutlineColor = "323232" },
+            { FontColor = "ffffff", MainColor = "967011", AccentColor = "ffeb3b", BackgroundColor = "3a301a", OutlineColor = "7a6d28", FontFace = "Gotham" },
         },
-        ["Ubuntu"] = {
+        ["Candy Cane"] = {
             7,
-            { FontColor = "ffffff", MainColor = "3e3e3e", AccentColor = "e2581e", BackgroundColor = "323232", OutlineColor = "191919" },
+            { FontColor = "000000", MainColor = "ff9191", AccentColor = "ec3737", BackgroundColor = "fccbcb", OutlineColor = "b49797", FontFace = "Gotham" },
         },
-        ["Quartz"] = {
+        ["Candy Pop"] = {
             8,
-            { FontColor = "ffffff", MainColor = "232330", AccentColor = "426e87", BackgroundColor = "1d1b26", OutlineColor = "27232f" },
+            { FontColor = "ffffff", MainColor = "5e2e65", AccentColor = "00e6e6", BackgroundColor = "1c002a", OutlineColor = "4a0044", FontFace = "Gotham" },
         },
-        ["Nord"] = {
+        ["Canyon Clay"] = {
             9,
-            { FontColor = "eceff4", MainColor = "3b4252", AccentColor = "88c0d0", BackgroundColor = "2e3440", OutlineColor = "4c566a" },
-        },
-        ["Dracula"] = {
-            10,
-            { FontColor = "f8f8f2", MainColor = "44475a", AccentColor = "ff79c6", BackgroundColor = "282a36", OutlineColor = "6272a4" },
-        },
-        ["Monokai"] = {
-            11,
-            { FontColor = "f8f8f2", MainColor = "272822", AccentColor = "f92672", BackgroundColor = "1e1f1c", OutlineColor = "49483e" },
-        },
-        ["Gruvbox"] = {
-            12,
-            { FontColor = "ebdbb2", MainColor = "3c3836", AccentColor = "fb4934", BackgroundColor = "282828", OutlineColor = "504945" },
-        },
-        ["Solarized"] = {
-            13,
-            { FontColor = "839496", MainColor = "073642", AccentColor = "cb4b16", BackgroundColor = "002b36", OutlineColor = "586e75" },
+            { FontColor = "ffffff", MainColor = "7f5539", AccentColor = "d78e6c", BackgroundColor = "3a2117", OutlineColor = "6c4a3b", FontFace = "Gotham" },
         },
         ["Catppuccin"] = {
-            14,
-            { FontColor = "d9e0ee", MainColor = "302d41", AccentColor = "f5c2e7", BackgroundColor = "1e1e2e", OutlineColor = "575268" },
+            10,
+            { FontColor = "d9e0ee", MainColor = "302d41", AccentColor = "f5c2e7", BackgroundColor = "1e1e2e", OutlineColor = "575268", FontFace = "Gotham" },
         },
-        ["One Dark"] = {
-            15,
-            { FontColor = "abb2bf", MainColor = "282c34", AccentColor = "c678dd", BackgroundColor = "21252b", OutlineColor = "5c6370" },
+        ["Celestial"] = {
+            11,
+            { FontColor = "eaeaf2", MainColor = "1f1c3c", AccentColor = "7986cb", BackgroundColor = "0b0928", OutlineColor = "362e61", FontFace = "Gotham" },
+        },
+        ["Copper Canyon"] = {
+            12,
+            { FontColor = "ffffff", MainColor = "7c2d12", AccentColor = "ff7043", BackgroundColor = "38190a", OutlineColor = "5c321d", FontFace = "Gotham" },
+        },
+        ["Crimson Tide"] = {
+            13,
+            { FontColor = "ffffff", MainColor = "5a0000", AccentColor = "ff1744", BackgroundColor = "330000", OutlineColor = "990000", FontFace = "Gotham" },
         },
         ["Cyberpunk"] = {
-            16,
-            { FontColor = "f9f9f9", MainColor = "262335", AccentColor = "00ff9f", BackgroundColor = "1a1a2e", OutlineColor = "413c5e" },
+            14,
+            { FontColor = "f9f9f9", MainColor = "262335", AccentColor = "00ff9f", BackgroundColor = "1a1a2e", OutlineColor = "413c5e", FontFace = "Gotham" },
         },
-        ["Oceanic Next"] = {
+        ["Deep Space"] = {
+            15,
+            { FontColor = "cfd8dc", MainColor = "0d1b2a", AccentColor = "4e8bbf", BackgroundColor = "081421", OutlineColor = "284259", FontFace = "Gotham" },
+        },
+        ["Desert Storm"] = {
+            16,
+            { FontColor = "ffffff", MainColor = "c6ab80", AccentColor = "af8e6a", BackgroundColor = "372d26", OutlineColor = "6b5541", FontFace = "Gotham" },
+        },
+        ["Dracula"] = {
             17,
-            { FontColor = "d8dee9", MainColor = "1b2b34", AccentColor = "6699cc", BackgroundColor = "16232a", OutlineColor = "343d46" },
+            { FontColor = "f8f8f2", MainColor = "44475a", AccentColor = "ff79c6", BackgroundColor = "282a36", OutlineColor = "6272a4", FontFace = "Gotham" },
+        },
+        ["Dust Bowl"] = {
+            18,
+            { FontColor = "ffffff", MainColor = "5c4537", AccentColor = "b2957e", BackgroundColor = "3b3024", OutlineColor = "7a6d58", FontFace = "Gotham" },
+        },
+        ["Dusty Rose"] = {
+            19,
+            { FontColor = "ffffff", MainColor = "ba6b6c", AccentColor = "f4a7b9", BackgroundColor = "3d1f23", OutlineColor = "70454b", FontFace = "Gotham" },
+        },
+        ["Electric Lime"] = {
+            20,
+            { FontColor = "d4d4d4", MainColor = "454f09", AccentColor = "aeea00", BackgroundColor = "222222", OutlineColor = "4f4f4f", FontFace = "Gotham" },
+        },
+        ["Emerald Dream"] = {
+            21,
+            { FontColor = "e0ffe0", MainColor = "014421", AccentColor = "33cc99", BackgroundColor = "001a10", OutlineColor = "02442b", FontFace = "Gotham" },
+        },
+        ["Fatality"] = {
+            22,
+            { FontColor = "ffffff", MainColor = "1e1842", AccentColor = "c50754", BackgroundColor = "191335", OutlineColor = "3c355d", FontFace = "Gotham" },
+        },
+        ["Flame Ember"] = {
+            23,
+            { FontColor = "ffffff", MainColor = "692423", AccentColor = "ff7043", BackgroundColor = "2e0005", OutlineColor = "8b3a3a", FontFace = "Gotham" },
+        },
+        ["Forest Mist"] = {
+            24,
+            { FontColor = "dcedc8", MainColor = "2e4d2b", AccentColor = "a8d5ba", BackgroundColor = "1b2f20", OutlineColor = "3c5a3d", FontFace = "Gotham" },
+        },
+        ["Glacial"] = {
+            25,
+            { FontColor = "e0f7fa", MainColor = "2c3e50", AccentColor = "4dd0e1", BackgroundColor = "1a2d3a", OutlineColor = "2c5f58", FontFace = "Gotham" },
+        },
+        ["Goldenrod"] = {
+            26,
+            { FontColor = "ffffff", MainColor = "8c7a3f", AccentColor = "ffd54f", BackgroundColor = "4c3d20", OutlineColor = "6e5e3a", FontFace = "Gotham" },
+        },
+        ["Graphite"] = {
+            27,
+            { FontColor = "d1d1d1", MainColor = "2b2b2b", AccentColor = "777777", BackgroundColor = "1a1a1a", OutlineColor = "444444", FontFace = "Gotham" },
+        },
+        ["Gruvbox"] = {
+            28,
+            { FontColor = "ebdbb2", MainColor = "3c3836", AccentColor = "fb4934", BackgroundColor = "282828", OutlineColor = "504945", FontFace = "Gotham" },
+        },
+        ["Iceberg"] = {
+            29,
+            { FontColor = "ffffff", MainColor = "1e3d59", AccentColor = "00b7ff", BackgroundColor = "12273d", OutlineColor = "30577a", FontFace = "Gotham" },
+        },
+        ["Inferno"] = {
+            30,
+            { FontColor = "ffffff", MainColor = "4b000f", AccentColor = "ff3300", BackgroundColor = "2e0005", OutlineColor = "7a0011", FontFace = "Gotham" },
+        },
+        ["Jade Forest"] = {
+            31,
+            { FontColor = "f0fff0", MainColor = "0a2c2a", AccentColor = "3bbf9b", BackgroundColor = "081d1b", OutlineColor = "205752", FontFace = "Gotham" },
+        },
+        ["Jester"] = {
+            32,
+            { FontColor = "ffffff", MainColor = "242424", AccentColor = "db4467", BackgroundColor = "1c1c1c", OutlineColor = "373737", FontFace = "Gotham" },
+        },
+        ["Lavender Mist"] = {
+            33,
+            { FontColor = "faf0ff", MainColor = "7e5a9b", AccentColor = "cba5e6", BackgroundColor = "44275a", OutlineColor = "71538c", FontFace = "Gotham" },
+        },
+        ["Lunar Eclipse"] = {
+            34,
+            { FontColor = "dcdcdc", MainColor = "2c2933", AccentColor = "908ec3", BackgroundColor = "1b1823", OutlineColor = "3e3a4e", FontFace = "Gotham" },
+        },
+        ["Marshmallow"] = {
+            35,
+            { FontColor = "000000", MainColor = "eccbea", AccentColor = "f8bbd0", BackgroundColor = "e4dfdf", OutlineColor = "96a8d7", FontFace = "Gotham" },
         },
         ["Material"] = {
-            18,
-            { FontColor = "eeffff", MainColor = "212121", AccentColor = "82aaff", BackgroundColor = "151515", OutlineColor = "424242" },
-        }
+            36,
+            { FontColor = "eeffff", MainColor = "212121", AccentColor = "82aaff", BackgroundColor = "151515", OutlineColor = "424242", FontFace = "Gotham" },
+        },
+        ["Midnight Blue"] = {
+            37,
+            { FontColor = "e0eaf2", MainColor = "1a2634", AccentColor = "5c8fc0", BackgroundColor = "0f1221", OutlineColor = "2c3e50", FontFace = "Gotham" },
+        },
+        ["Midnight Orchid"] = {
+            38,
+            { FontColor = "f8f8ff", MainColor = "2a1e3b", AccentColor = "b86bbe", BackgroundColor = "1a0c27", OutlineColor = "4f2b55", FontFace = "Gotham" },
+        },
+        ["Mint"] = {
+            39,
+            { FontColor = "ffffff", MainColor = "242424", AccentColor = "3db488", BackgroundColor = "1c1c1c", OutlineColor = "373737", FontFace = "Gotham" },
+        },
+        ["Mint Chocolate"] = {
+            40,
+            { FontColor = "ffffff", MainColor = "2e4639", AccentColor = "a1c349", BackgroundColor = "1c2f24", OutlineColor = "3c5a4e", FontFace = "Gotham" },
+        },
+        ["Mocha Mist"] = {
+            41,
+            { FontColor = "f5e1da", MainColor = "6b4c3b", AccentColor = "bc987e", BackgroundColor = "3c2b24", OutlineColor = "795b48", FontFace = "Gotham" },
+        },
+        ["Monokai"] = {
+            42,
+            { FontColor = "f8f8f2", MainColor = "272822", AccentColor = "f92672", BackgroundColor = "1e1f1c", OutlineColor = "49483e", FontFace = "Gotham" },
+        },
+        ["Mystic Violet"] = {
+            43,
+            { FontColor = "f0e6ff", MainColor = "3e1f47", AccentColor = "ba68c8", BackgroundColor = "2a102f", OutlineColor = "5c3d63", FontFace = "Gotham" },
+        },
+        ["Neon Jungle"] = {
+            44,
+            { FontColor = "ccff99", MainColor = "1a1f27", AccentColor = "00ff88", BackgroundColor = "0d0d0d", OutlineColor = "2a2a2a", FontFace = "Gotham" },
+        },
+        ["Nord"] = {
+            45,
+            { FontColor = "eceff4", MainColor = "3b4252", AccentColor = "88c0d0", BackgroundColor = "2e3440", OutlineColor = "4c566a", FontFace = "Gotham" },
+        },
+        ["Ocean Breeze"] = {
+            46,
+            { FontColor = "e0f7fa", MainColor = "005377", AccentColor = "00bcd4", BackgroundColor = "002d3a", OutlineColor = "014f62", FontFace = "Gotham" },
+        },
+        ["Ocean Pearl"] = {
+            47,
+            { FontColor = "ffffff", MainColor = "036865", AccentColor = "42eecf", BackgroundColor = "002f3a", OutlineColor = "014f52", FontFace = "Gotham" },
+        },
+        ["Oceanic Next"] = {
+            48,
+            { FontColor = "d8dee9", MainColor = "1b2b34", AccentColor = "6699cc", BackgroundColor = "16232a", OutlineColor = "343d46", FontFace = "Gotham" },
+        },
+        ["One Dark"] = {
+            49,
+            { FontColor = "abb2bf", MainColor = "282c34", AccentColor = "c678dd", BackgroundColor = "21252b", OutlineColor = "5c6370", FontFace = "Gotham" },
+        },
+        ["Opal Glow"] = {
+            50,
+            { FontColor = "f0fff0", MainColor = "567572", AccentColor = "b2f5ea", BackgroundColor = "213837", OutlineColor = "2b4f3c", FontFace = "Gotham" },
+        },
+        ["Peach Fuzz"] = {
+            51,
+            { FontColor = "ffffff", MainColor = "b6846b", AccentColor = "ff8e72", BackgroundColor = "3a2525", OutlineColor = "7f5a56", FontFace = "Gotham" },
+        },
+        ["Peacock Feather"] = {
+            52,
+            { FontColor = "ffffff", MainColor = "004953", AccentColor = "00bcd4", BackgroundColor = "002f3d", OutlineColor = "006370", FontFace = "Gotham" },
+        },
+        ["Peanut Butter"] = {
+            53,
+            { FontColor = "ffffff", MainColor = "e1a95f", AccentColor = "ffca80", BackgroundColor = "2b221a", OutlineColor = "7a6326", FontFace = "Gotham" },
+        },
+        ["Quartz"] = {
+            54,
+            { FontColor = "ffffff", MainColor = "232330", AccentColor = "426e87", BackgroundColor = "1d1b26", OutlineColor = "27232f", FontFace = "Gotham" },
+        },
+        ["Retro Wave"] = {
+            55,
+            { FontColor = "f0f8ff", MainColor = "2d033b", AccentColor = "ff77ff", BackgroundColor = "1a0126", OutlineColor = "5b114b", FontFace = "Gotham" },
+        },
+        ["Rose Quartz"] = {
+            56,
+            { FontColor = "ffffff", MainColor = "c48793", AccentColor = "f7cad0", BackgroundColor = "2f1b24", OutlineColor = "6f4b57", FontFace = "Gotham" },
+        },
+        ["Sandstone"] = {
+            57,
+            { FontColor = "2e1e1e", MainColor = "c2b280", AccentColor = "d7b889", BackgroundColor = "f5e6ca", OutlineColor = "a79876", FontFace = "Gotham" },
+        },
+        ["Slate Grey"] = {
+            58,
+            { FontColor = "ffffff", MainColor = "607d8b", AccentColor = "b0bec5", BackgroundColor = "263238", OutlineColor = "546e7a", FontFace = "Gotham" },
+        },
+        ["Solar Flare"] = {
+            59,
+            { FontColor = "ffffff", MainColor = "4e1609", AccentColor = "ff7043", BackgroundColor = "2b0702", OutlineColor = "6f1e07", FontFace = "Gotham" },
+        },
+        ["Solarized"] = {
+            60,
+            { FontColor = "839496", MainColor = "073642", AccentColor = "cb4b16", BackgroundColor = "002b36", OutlineColor = "586e75", FontFace = "Gotham" },
+        },
+        ["Steel Blue"] = {
+            61,
+            { FontColor = "f1f5f9", MainColor = "1f3a58", AccentColor = "607d8b", BackgroundColor = "152439", OutlineColor = "2c526d", FontFace = "Gotham" },
+        },
+        ["Stormy Night"] = {
+            62,
+            { FontColor = "e0e0e0", MainColor = "2f3e4e", AccentColor = "627d98", BackgroundColor = "1b232f", OutlineColor = "34455b", FontFace = "Gotham" },
+        },
+        ["Sunrise Glow"] = {
+            63,
+            { FontColor = "ffffff", MainColor = "ad6700", AccentColor = "ffeb99", BackgroundColor = "3d281e", OutlineColor = "8c5200", FontFace = "Gotham" },
+        },
+        ["Sunset Horizon"] = {
+            64,
+            { FontColor = "ffffff", MainColor = "9f4f48", AccentColor = "fbc687", BackgroundColor = "2a0f0f", OutlineColor = "7b3f39", FontFace = "Gotham" },
+        },
+        ["Tokyo Night"] = {
+            65,
+            { FontColor = "ffffff", MainColor = "191925", AccentColor = "6759b3", BackgroundColor = "16161f", OutlineColor = "323232", FontFace = "Gotham" },
+        },
+        ["Tropical Punch"] = {
+            66,
+            { FontColor = "ffffff", MainColor = "e96c98", AccentColor = "ffc200", BackgroundColor = "4d2b47", OutlineColor = "e83296", FontFace = "Gotham" },
+        },
+        ["Twilight"] = {
+            67,
+            { FontColor = "e0e6f8", MainColor = "121212", AccentColor = "9fa8da", BackgroundColor = "0a0a0a", OutlineColor = "333444", FontFace = "Gotham" },
+        },
+        ["Ubuntu"] = {
+            68,
+            { FontColor = "ffffff", MainColor = "3e3e3e", AccentColor = "e2581e", BackgroundColor = "323232", OutlineColor = "191919", FontFace = "Gotham" },
+        },
+        ["Vintage Paper"] = {
+            69,
+            { FontColor = "2f2f2f", MainColor = "d8cfc4", AccentColor = "b89c73", BackgroundColor = "f3e9d2", OutlineColor = "a68f7c", FontFace = "Gotham" },
+        },
+        ["Vodka Lime"] = {
+            70,
+            { FontColor = "70a634", MainColor = "6f8740", AccentColor = "396b07", BackgroundColor = "2a2a2a", OutlineColor = "4f4f4f", FontFace = "Gotham" },
+        },
     }
 
     function ThemeManager:SetLibrary(library)
