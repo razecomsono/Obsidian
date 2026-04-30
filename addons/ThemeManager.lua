@@ -436,7 +436,7 @@ do
     end
 
     function ThemeManager:LoadDefault()
-        local theme = "Default"
+        local theme = "Revenant"
         local content = isfile(self.Folder .. "/themes/default.txt") and readfile(self.Folder .. "/themes/default.txt")
 
         local isDefault = true
@@ -478,8 +478,8 @@ do
                 LibraryScheme[field] = Color3.fromHex(theme[field])
 
             else
-                FinalTheme[field] = ThemeManager.BuiltInThemes["Default"][2][field]
-                LibraryScheme[field] = Color3.fromHex(ThemeManager.BuiltInThemes["Default"][2][field])
+                FinalTheme[field] = ThemeManager.BuiltInThemes["Revenant"][2][field]
+                LibraryScheme[field] = Color3.fromHex(ThemeManager.BuiltInThemes["Revenant"][2][field])
             end
         end
 
@@ -501,7 +501,8 @@ do
         end
 
         self.Library.Scheme = LibraryScheme
-        self.BuiltInThemes["Default"] = { 1, FinalTheme }
+        self.DefaultTheme = "Default"
+        self.BuiltInThemes["Default"] = { 0, FinalTheme }
 
         self.Library:UpdateColorsUsingRegistry()
     end
